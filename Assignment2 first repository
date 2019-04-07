@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<dos.h>
+int main()
+{
+	int n,bt[10],pr[10],wt[10];
+	int temp,pos,i,j;
+	printf("Enter the no. of process: ");
+	scanf("%d",&n);
+	printf("\nEnter burst time for respective process\n");
+	for(i=1;i<=n;i++)
+	{
+		printf("\nEnter burst time for '%d' process: ",i);
+		scanf("%d%d",&bt[i],&pr[i]);
+	}
+	
+/*	printf("\nEnter priority of entered processes\n");
+	for(int i=1;i<=n;i++)
+	{
+		 printf("Enter priority of '%d' process",i);
+		 scanf("%d",&pr[i]);
+	}*/
+	
+	printf("\n*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*`*\n");
+	printf("Process\t  Burst_Time\tPriority\n");
+	for(i=1;i<=n;i++)
+	{
+		printf("   %d\t     %d\t   \t   %d\n",i,bt[i],pr[i]);
+		//sleep(1);
+	}
+	
